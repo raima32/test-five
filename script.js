@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const completedButtons = document.querySelectorAll("button");
   completedButtons.forEach((button) => {
-    if (button.textContent.trim() === "completed") {
+    if (button.textContent.trim() === "Completed") {
       button.addEventListener("click", handleTaskCompletion);
     }
   });
