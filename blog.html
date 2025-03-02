@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevBoard Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+      .font-poppins {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="font-poppins bg-[#3752FD33] w-[84.5%] mx-auto">
+    <header
+      class="h-[100px] w-full bg-[#FFFFFF] mb-[20px] mt-6 rounded-2xl flex justify-between"
+    >
+      <div class="flex items-center gap-[6px]">
+        <img class="p-6" src="./assets/logo.png" alt="" />
+        <h1 class="text-[35.67px]">Dev<span class="font-bold">Board</span></h1>
+      </div>
+      <div class="flex items-center mr-6">
+        <a
+          href="index.html"
+          class="bg-[#3752FD] text-white py-2 px-4 rounded-lg"
+          >Back to Dashboard</a
+        >
+      </div>
+    </header>
+
+    <main class="">
+      <h1 class="text-3xl font-bold mb-6 text-center">Blogs</h1>
+      <!-- Question 1 -->
+      <div class="w-full bg-[#FFFFFF] rounded-2xl py-2">
+        <p class="font-bold border-b border-dotted p-4">
+          Question-1: what are the different ways to select on element in the
+          DOM?
+        </p>
+        <p class="p-4">
+          Answer: There are several ways to select elements in the DOM.Here are
+          the main methods: <br />
+          getElementById, getElementsByClassName, getElementsByTagName
+        </p>
+      </div>
+      <!-- Question 2 -->
+      <div class="w-full bg-[#FFFFFF] rounded-2xl py-2 mt-4">
+        <p class="font-bold border-b border-dotted p-4">
+          Question-2: What is the difference between innerHTML,innerText,and
+          textContent?
+        </p>
+        <p class="p-4">
+          Answer: innerHTML,innerText,and textContent have important differences
+          in how they interact with HTML <br />
+          <li class="p-4">
+            innerHTML when you need to set or get HTML content
+          </li>
+          <li class="p-4">
+            innerText when you need the text exactly as it appears visually to
+            the user
+          </li>
+          <li class="p-4">
+            textContent for better performance when working with text-only
+            content
+          </li>
+        </p>
+      </div>
+      <!-- Question 3 -->
+      <div class="w-full bg-[#FFFFFF] rounded-2xl py-2 mt-4">
+        <p class="font-bold border-b border-dotted p-4">
+          Question-3: What is event delegation in the DOM?
+        </p>
+        <p class="p-4">
+          Answer: Event delegation is a technique instead of attaching event
+          listeners to individual elements,you attach a single event listener to
+          a parent element that watches for events bubbling up from its child
+          element.
+        </p>
+      </div>
+      <!-- Question 4 -->
+      <div class="w-full bg-[#FFFFFF] rounded-2xl py-2 mt-4">
+        <p class="font-bold border-b border-dotted p-4">
+          Question-4: What is event bubbing in the DOM?
+        </p>
+        <p class="p-4">
+          Answer: Event bubbling is a key concept in the DOM event propagation
+          model. Here's how it works: When an event occurs on an element (like a
+          click on a button), the event doesn't just trigger on that specific
+          element. Instead, the event "bubbles up" through the DOM hierarchy,
+          triggering the same event on each parent element in sequence.
+        </p>
+      </div>
+      <!-- Question 5 -->
+      <div class="w-full bg-[#FFFFFF] rounded-2xl py-2 mt-4">
+        <p class="font-bold border-b border-dotted p-4">
+          Question-5: How do you create ,add,and remove elements using
+          JavaScript?
+        </p>
+        <p class="p-4">
+          Answer:In JavaScript, create, add, and remove elements in the DOM
+          (Document Object Model) using various methods.
+
+          <li class="p-4">Create:document.createElement()</li>
+          <li class="p-4">
+            Add: appendChild(), append(), prepend(), insertBefore()
+          </li>
+          <li class="p-4">Remove: remove(), removeChild()</li>
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
